@@ -14,7 +14,7 @@ Listening on 192.168.152.128:1337
 Connection from 192.168.152.130:42314
 Transfering socat...
 
-Socal transfered!
+Socat transfered!
 Socat name on the target: /tmp/lyqginuvpexxuvwj
 Waiting for connection...
 ubuntu@ubuntu-64:/tmp$ whoami
