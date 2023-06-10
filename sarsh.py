@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import socket
 from random import randint
 from os import system, path
